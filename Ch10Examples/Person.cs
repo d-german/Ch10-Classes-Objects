@@ -23,7 +23,7 @@ namespace Ch10Examples
         }
 
         private static void Increment()
-        {
+        {            
             Count++;
         }
 
