@@ -1,31 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ch10Examples
+﻿namespace Ch10Examples
 {
-   public class Person
+    public class Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        static public int Count { get; private set; } = 0;
-        public Person(string firstName, string lastName):this()
+        public Person(string firstName, string lastName) : this()
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
+            FirstName = firstName;
+            LastName = lastName;
         }
 
         public Person()
         {
-            Person.Increment();
+            Increment();
         }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public static int Count { get; private set; }
 
         private static void Increment()
-        {            
+        {
             Count++;
         }
-
     }
 }

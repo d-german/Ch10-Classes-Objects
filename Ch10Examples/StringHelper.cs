@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ch10Examples
+﻿namespace Ch10Examples
 {
-   public static class StringHelper
+    public static class StringHelper
     {
         public static bool IsCapitalized(this string s)
         {

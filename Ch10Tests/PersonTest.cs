@@ -1,5 +1,4 @@
-﻿using System;
-using Ch10Examples;
+﻿using Ch10Examples;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Ch10Tests

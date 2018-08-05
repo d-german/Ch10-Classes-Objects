@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ch10Examples
+﻿namespace Ch10Examples
 {
     public struct Box
     {
@@ -19,14 +13,19 @@ namespace Ch10Examples
                 Length = b.Length + c.Length,
                 Width = b.Width + c.Width,
                 Height = b.Height + c.Height
-            };            
+            };
         }
 
-        public static bool operator ==(Box b, Box c) => 
-            b.Length == c.Length &&
-            b.Width == c.Width &&
-            b.Height == c.Height;
+        public static bool operator ==(Box b, Box c)
+        {
+            return b.Length == c.Length &&
+                   b.Width == c.Width &&
+                   b.Height == c.Height;
+        }
 
-        public static bool operator !=(Box b, Box c) => b != c;
+        public static bool operator !=(Box b, Box c)
+        {
+            return b != c;
+        }
     }
 }
