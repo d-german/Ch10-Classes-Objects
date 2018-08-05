@@ -52,6 +52,7 @@
     <Compile Include="StockTest.cs" />
     <Compile Include="PersonTest.cs" />
     <Compile Include="BoxTest.cs" />
+    <Compile Include="StringHelperTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ch10Examples\Ch10Examples.csproj">

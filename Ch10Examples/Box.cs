@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ch10Examples
 {
-    public class Box
+    public struct Box
     {
         public int Length { get; set; }
         public int Width { get; set; }
@@ -22,7 +22,7 @@ namespace Ch10Examples
             };            
         }
 
-        public static bool operator ==(Box b, Box c) =>
+        public static bool operator ==(Box b, Box c) => 
             b.Length == c.Length &&
             b.Width == c.Width &&
             b.Height == c.Height;
